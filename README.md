@@ -5,4 +5,11 @@
    + [3. 트랜잭션](https://github.com/rohmindo/CS-self_study/blob/main/Database/CS_basic.md)
    + [4. RDB vs NOSQL](https://github.com/rohmindo/CS-self_study/blob/main/Database/CS_basic.md)
 - ### [Network 이론](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
-- 
+   + [1. TCP vs UDP](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+   + [2. OSI 7 layer](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+   + [3. HTTP](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+   + [4. RestFul API](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+   + [5. Proxy server](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+   + [6. Security](https://github.com/rohmindo/CS-self_study/blob/main/Networks/CS_Basic_Network.md)
+- ### [GIT](https://github.com/rohmindo/CS-self_study/tree/main/Git/CS_Git.md)
+   + [1. Git 사용이유](https://github.com/rohmindo/CS-self_study/tree/main/Git/CS_Git.md)
