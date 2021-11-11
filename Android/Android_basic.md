@@ -3,7 +3,7 @@
 
    + ### [1. Android 4대 구성요소](#1-android-4대-구성요소)
    + ### [2. Intent](#2-intent란)
-   + ### [3. Activity Life-cycle](#3-activity-life-cycle)
+   + ### [3. Activity Lifecycle](#3-activity-life-cycle)
 
 ## 1. Android 4대 구성요소
   + ### Activity :
