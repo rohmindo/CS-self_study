@@ -39,7 +39,7 @@
      + 각 인텐트 필터는 어느 유형의 인텐트를 수락할지 지정한다.
      + 활동, 서비스, broadcast receiver가 응답할 수 있는 인텐트의 유형 지정
      + Action(인텐트 필터에 action요소가 없으면 필터가 intent객체를 허용하지 않음), category,data 영역으로 구성됨.
- ## 3. Android life cycle
+ ## 3. activity life cycle
   + ### Activity 상태
     + **Active 상태**(활성화) : 
       + 액티비티가 스크린 전면에서 실행되고 있는 상태
