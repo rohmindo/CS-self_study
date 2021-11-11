@@ -2,8 +2,8 @@
 # Table Of Contents :
 
    + ### [1. Android 4대 구성요소](#1-android-4대-구성요소)
-   + ### [2. Intent](#2-intent)
-   + ### [3. Activity Life cycle](#3-activity-life-cycle)
+   + ### [2. Intent](#2-intent란)
+   + ### [3. Activity Life-cycle](#3-activity-life-cycle)
 
 ## 1. Android 4대 구성요소
   + ### Activity :
@@ -21,7 +21,7 @@
   + ### Content provider :
     + 콘텐트 제공자(Content Provider)는 데이터를 관리하고 다른 애플리케이션의 데이터를 제공하는 데 사용되는 컴포넌트입니다.
     + 특정한 애플리케이션이 사용하고 있는 데이터베이스(DB)를 공유하기 위해 사용하며 애플리케이션 간의 데이터 공유를 위해 표준화된 인터페이스를 제공합니다.
-# 2. Intent
+## 2. Intent란
   + ### Intent 란?
     + Component를 실행하기 위해 시스템에 넘기는 정보이다.
     + 인텐트(Intent)란 이러한 어플리케이션 구성요소(컴포넌트) 간에 작업 수행을 위한 정보를 전달하는 역할을 한다.
