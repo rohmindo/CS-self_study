@@ -15,13 +15,10 @@
    + [1. Android 4대 구성요소](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
    + [2. Intent](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
    + [3. Activity lifecycle](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
+   + [4. Design Pattern](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
+   + [5. RecyclerView](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
+   + [6. Jetpack Library](https://github.com/rohmindo/CS-self_study/blob/main/Android/Android_basic.md)
 - ### [GIT](https://github.com/rohmindo/CS-self_study/tree/main/Git/CS_Git.md)
    + [1. Git 사용이유](https://github.com/rohmindo/CS-self_study/tree/main/Git/CS_Git.md)
 
 
-# Network
-# Table Of Contents :
-
-   + ### [1. Android 4대 구성요소](#1-android-4대-구성요소)
-   + ### [2. Intent](#2-intent란)
-   + ### [3. Activity Lifecycle](#3-activity-life-cycle)
