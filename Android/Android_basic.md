@@ -1,11 +1,12 @@
-# Network
+# Android
 # Table Of Contents :
 
    + ### [1. Android 4대 구성요소](#1-android-4대-구성요소)
    + ### [2. Intent](#2-intent란)
    + ### [3. Activity Lifecycle](#3-activity-life-cycle)
    + ### [4. Design Pattern](#4-디자인패턴)
-
+   + ### [5. RecyclerView](#4-Recycler-View)
+   + ### [6. Jetpack](#6-Jetpack-Library)
 ## 1. Android 4대 구성요소
   + ### Activity :
     + 액티비티는 사용자가 애플리케이션과 상호작용하는 단일화면을 의미하며 모든 안드로이드 애플리케이션은 액티비티로 구성되어 있습니다.
@@ -129,3 +130,16 @@
          + ViewModel을 설계하기가 어려운 단점이 존재
          + 표준화된 틀이 존재하지 않아 사람마다 이해도가 다름
          + 데이터 바인딩이 필수적으로 요구됨
+## 5. Recycler View
+   + ### RecyclerView vs ListView :
+      + ![image](https://user-images.githubusercontent.com/63469069/141772705-6a1433a8-677a-4457-a2ad-92012e3228d0.png)
+      + 총 데이터 100개 화면에 보여지는 개수 10개라고 생각해보자.
+      + ListView를 사용할 경우 위아래 스크롤 할때마다 View객체들이 계속해서 생성되고 삭제되므로 많은 작업이 필요하게 된다.
+      + RecyclerView의 경우 화면에서 사라질 View객체를 **새로 나타날 View로 재사용하는 것**.
+      + RecyclerView의 경우 View객체만을 재사용하는 것이지 담고 있는 **data를 재사용하는 것은 아니다**. 
+      + 하지만 View 객체를 새로 생성하지 않는 것만으로도 ListView에 비해 훨씬 효율적이다.
+   + ### RecyclerView 요소
+      + ViewHolder : 처음 보여줄 개수를 기억(홀딩)하고 있는 객체이다.
+      + Adapter : 전체 data를 RecyclerView에 바인딩 시켜주기 위해 사전 작업이 이루어 지는 객체이다.
+      + LayoutManager : 간단하게 어디로 이동할지, 즉 좌우 스크롤 or 상하 스크롤할 지 결정해주는 것 정도로만 생각.
+## 6. Jetpack Library
