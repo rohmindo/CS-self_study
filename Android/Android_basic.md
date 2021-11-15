@@ -4,6 +4,7 @@
    + ### [1. Android 4대 구성요소](#1-android-4대-구성요소)
    + ### [2. Intent](#2-intent란)
    + ### [3. Activity Lifecycle](#3-activity-life-cycle)
+   + ### [4. Design Pattern](#4-디자인패턴)
 
 ## 1. Android 4대 구성요소
   + ### Activity :
@@ -95,3 +96,36 @@
    + ### 핸드폰 화면전환 처리
       +  디바이스를 회전할 때는 다른 상태변화 와는 다르게 액티비티가  destroy 되었다가 다시 create 된다. 그래서 사용중이던 상태를 잃어버리게 된다. 
       +  onSaveInstanceState 메서드를 이용해서 Bundle 객체에 저장할 데이터를 저장한 후, Oncreate에서 Bundle 객체를 이용해서 데이터를 다시 복원한다.    
+## 4. 디자인패턴
+   + ### MVC 구조
+      + View : UI(XML,웹layout등)
+      + model : DB(data)
+      + Controller : Activity(logic)
+      + 모든 입력은 controller에서 처리 & 입력에 대한 logic 및 화면에 무었을 보여줄지 controller에서 처리 --> controller에서 하는일이 너무 많아짐.
+      + 단점 :
+         + **View가 model을 이용하므로 의존성**이 커진다.
+         + Controller가 안드로이드에 깊게 종속적이므로 **테스트하는데 문제가 발생**한다.
+         + 새로운 기능을 추가하거나 수정을 할때 많은 코드가 Controller에 모이면서 유지보수가 어려워진다.
+    
+   + ### MVP 구조
+      + View : Activity(사용자의 Input + UI)
+      + Presenter : Model과 View를 연결시켜주는 **매개체** & 뷰에 연결되는 것이 아닌 단순한 인터페이스
+      + 사용자의 입력은 View를 통해 들어오고 Model과 View 는 항상 Presenter를 거쳐서 동작
+      + --> MVC의 단점인 **View와 Model의 의존성이 없어짐 !**
+      + View에 Input이 들어오면 presenter에서 처리 & 화면에 보여줄 것도 model과 상호작용 후 View에 전달
+      + Presenter는 Input/Output 과는 연관이 있지만 **화면과는 관련이 없어짐**.
+      + MVC와의 가장 큰 차이점 화면에 종속받는 Controller와 다르게 Presenter는 화면에 종속받지 않아 **테스트가 가능**해짐
+      + 단점 :
+         + View와 Presenter가 1:1 대응 이므로 종속성이 커짐
+         + --> 비슷한 화면 비슷한 기능이여도 Presenter가 **여러개 필요**하게 되어 불필요한 코드증가
+
+   + ### MVVM 구조
+   + ViewModel : **화면에 무엇을 표시할지 신경쓰지 X** & 단지 Model과 상호작용하며 **data만 관리**
+   + View와의 의존성을 **완전히 분리**
+   + Data가 변경되면 ViewModel에서는 단지 수정만 해줌 & View에서 ViewModel을 구독하면서 데이터가 바뀌었는지 확인하며 화면갱신
+   + 여러 View가 있다고 하더라도 비슷한 data를 가지고 있다면 하나의 ViewModel을 보고있음
+   + ViewModel 과 View의 종속성이 1:n 이므로 그만큼 코드가 줄어듬
+   + 단점 :
+      + ViewModel을 설계하기가 어려운 단점이 존재
+      + 표준화된 틀이 존재하지 않아 사람마다 이해도가 다름
+      + 데이터 바인딩이 필수적으로 요구됨
